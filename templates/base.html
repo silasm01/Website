@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        .Logo {
+            text-align: center;
+            font-family: calibri;
+            top: 15px;
+            position: absolute;
+            width: 99%;
+            font-size: 225%;
+            background: none;
+        }
+
+        .topbox {
+            width: auto;
+            height: 4pc;
+            background-color: whitesmoke;
+        }
+
+        .button {
+            border: none;
+            position: absolute;
+            font-weight: bold;
+        }
+
+        .login {
+            background: none;
+            position: absolute;
+            font-family: calibri;
+            font-weight: bold;
+            font-size: 125%;
+            top: 27px;
+            right: 30px;
+        }
+
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body style="background-color: lightsteelblue;">
+    <div class="topbox"></div>
+    <button class="Logo button"> <a href="/home">Web|base</a></button>
+    {% block body %} {% endblock %}
+
+</body>
+
+</html>
